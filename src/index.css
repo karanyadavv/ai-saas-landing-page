@@ -8,4 +8,17 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #02070D;
+}
+
+@layer components {
+  .btn-primary {
+    @apply font-inter py-4 px-6 bg-gradient-to-b from-[#79b6ff] via-[#1e83ff] to-[#0073ff] text-white font-semibold rounded-full hover:bg-gradient-to-t hover:from-[#0073ff] hover:to-[#79b6ff]  transition-all duration-300 ease-in-out;
+  }
+  .btn-outline {
+    @apply font-inter text-sm p-0.5 rounded-full text-white bg-gradient-to-r from-[#0173fe] via-[#528dd5] to-[#a8a9aa];
+  }
+  .btn-outline-text{
+    @apply font-inter text-sm py-2 rounded-full px-4 h-full w-full items-center justify-center bg-[#02070D] hover:bg-[#0073FF] transition-all duration-300 ease-out;
+  }
 }
