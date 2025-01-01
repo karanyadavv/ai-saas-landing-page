@@ -9,7 +9,7 @@ const IntroSection = () => {
       <p className="text-[40px] md:text-[58px] text-white font-medium font-archivo leading-tight md:tracking-normal tracking-tight text-wrap">
         Accelerating sales & growth with our AI solutions.
       </p>
-      <p className="font-inter text-[#aaaaaa] font-[28px] text-wrap mt-4 leading-relaxed">
+      <p className="font-inter text-[#aaaaaa] font-[28px] text-wrap mt-4 leading-relaxed text-justify">
         Our AI-powered tools are designed to analyze vast amounts of data,
         uncover hidden patterns, and provide actionable insights that drive
         smarter decision.
