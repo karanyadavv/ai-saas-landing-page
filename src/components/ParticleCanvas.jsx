@@ -31,7 +31,7 @@ const ParticleCanvas = () => {
     const createParticle = () => ({
       x: Math.random() * dimensions.width,
       y: Math.random() * dimensions.height,
-      size: Math.random() * 3 + 1,
+      size: Math.random() * 2 + 1,
       speedX: Math.random() * 2 - 1,
       speedY: Math.random() * 2 - 1,
       opacity: Math.random() * 0.7 + 0.2,
