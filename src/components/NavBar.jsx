@@ -8,9 +8,9 @@ const NavBar = () => {
       initial={{ y: -100, opacity: 0, filter: "blur(12px)" }}
       animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
-      className="flex justify-center items-center text-white space-x-52 font-inter mb-12 md:mb-20"
+      className="flex justify-center items-center text-white space-x-52 font-inter -mt-4 mb-12 md:mb-20"
     >
-      <div className="w-[150px] md:w-[170px]">
+      <div className="">
         <img src={logoImg} alt="Logo" height={170} width={170} />
       </div>
       <div className="hidden md:flex justify-center items-center space-x-4">
