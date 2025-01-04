@@ -5,11 +5,11 @@ import ParticleCanvas from "./components/ParticleCanvas";
 
 function App() {
   return (
-    <div className="">
+    <>
       <ParticleCanvas />
       <NavBar />
       <IntroSection />
-    </div>
+    </>
   );
 }
 

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logoImg from "../assets/logo.png";
 import { motion } from "motion/react";
 import { HeaderList } from "../constants";
-import { div } from "motion/react-client";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,12 +10,12 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="relative">
+    <div className="relative ">
       <motion.div
         initial={{ y: -100, opacity: 0, filter: "blur(12px)" }}
         animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
         transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
-        className="flex justify-center items-center text-white space-x-52 font-inter -mt-4 mb-12 md:mb-20 backdrop-blur-sm"
+        className="flex justify-between px-[260px] w-full max-w-full items-center text-white space-x-52 font-inter -mt-4 mb-12 md:mb-20 backdrop-blur-sm"
       >
         <div className="flex items-center justify-between space-x-44">
           <img
@@ -44,7 +43,7 @@ const NavBar = () => {
             />
           </svg>
         </div>
-        <ul className="hidden md:flex justify-center items-center space-x-4 cursor-pointer ">
+        <ul className="hidden md:flex justify-center items-center space-x-10 cursor-pointer ">
           {HeaderList.map((item) => {
             return (
               <li

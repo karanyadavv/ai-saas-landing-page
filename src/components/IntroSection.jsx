@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import { DataList } from "../constants";
 
 const IntroSection = () => {
   return (
@@ -31,6 +32,28 @@ const IntroSection = () => {
         <button className="btn-primary mt-6">
           Get Start 14 days free trial
         </button>
+      </div>
+      <div className="md:flex justify-center items-center gap-10 w-full max-w-[1300px]">
+        {DataList.map((item) => {
+          return (
+            <div
+              key={item.title}
+              className="border border-[#083162] rounded-[40px] h-[595px] py-10 px-4 flex flex-col justify-between"
+            >
+              <div className="">
+                <img src={item.img} alt={item.title} />
+              </div>
+              <div className="flex flex-col items-start text-left px-2">
+                <p className="font-archivo font-medium text-white text-[24px]">
+                  {item.title}
+                </p>
+                <p className="font-inter text-[#6E6F72] text-[18px]">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
