@@ -33,7 +33,7 @@ const IntroSection = () => {
           Get Start 14 days free trial
         </button>
       </div>
-      <div className="md:flex justify-center items-center gap-10 w-full max-w-[1304px]">
+      <div className=" md:flex justify-center items-center gap-8 max-w-[1304px]">
         {DataList.map((item) => {
           return (
             <div
