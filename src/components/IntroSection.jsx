@@ -33,12 +33,12 @@ const IntroSection = () => {
           Get Start 14 days free trial
         </button>
       </div>
-      <div className="md:flex justify-center items-center gap-10 w-full max-w-[1300px]">
+      <div className="md:flex justify-center items-center gap-10 w-full max-w-[1304px]">
         {DataList.map((item) => {
           return (
             <div
               key={item.title}
-              className="border border-[#083162] rounded-[40px] h-[595px] py-10 px-4 flex flex-col justify-between"
+              className="border border-[#083162] rounded-[40px] h-[595px] w-[419px] pt-10 pb-8 px-4 flex flex-col justify-between"
             >
               <div className="">
                 <img src={item.img} alt={item.title} />
