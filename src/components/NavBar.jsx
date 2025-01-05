@@ -10,12 +10,12 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="relative">
+    <div className="sticky top-0">
       <motion.div
         initial={{ y: -100, opacity: 0, filter: "blur(12px)" }}
         animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
         transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
-        className="flex items-center justify-between md:px-[260px] text-white space-x-52 font-inter -mt-4 mb-12 md:mb-20 backdrop-blur-sm"
+        className="relative flex items-center justify-between md:px-[260px] text-white space-x-52 font-inter -mt-4 mb-12 md:mb-20 backdrop-blur-md"
       >
         <div className="flex items-center justify-between space-x-44">
           <img

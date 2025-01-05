@@ -13,9 +13,6 @@ html, body {
   background-color: #02070D;
 }
 
-#root {
-  margin: 0 auto;
-}
 
 @layer components {
   .btn-primary {

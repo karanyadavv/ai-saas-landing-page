@@ -8,7 +8,6 @@ const IntroSection = () => {
       <button className="btn-outline">
         <p className="btn-outline-text">Beta 1.5 available now</p>
       </button>
-
       <motion.div
         initial={{ y: 10, opacity: 0.5, filter: "blur(20px)" }}
         animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
@@ -33,12 +32,17 @@ const IntroSection = () => {
           Get Start 14 days free trial
         </button>
       </div>
-      <div className=" md:flex justify-center items-center gap-8 max-w-[1304px]">
+      <motion.div
+        initial={{ y: 150, opacity: 0, filter: "blur(12px)" }}
+        animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+        transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
+        className="mt-10 md:flex justify-center items-center space-y-6 gap-8 max-w-[1304px]"
+      >
         {DataList.map((item) => {
           return (
             <div
               key={item.title}
-              className="border border-[#083162] rounded-[40px] h-[595px] w-[419px] pt-10 pb-8 px-4 flex flex-col justify-between"
+              className="border border-[#083162] rounded-[40px] h-[595px] w-[370px] md:w-[419px] pt-10 pb-8 px-4 flex flex-col justify-between"
             >
               <div className="">
                 <img src={item.img} alt={item.title} />
@@ -54,7 +58,7 @@ const IntroSection = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };
